@@ -1,0 +1,254 @@
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <script>
+    $(document).ready(function() {
+        $('#monTableauId').DataTable({
+        "pageLength": 100,
+        "createdRow": function( row, data, dataIndex ){
+            }
+        });
+    });
+    </script>
+    
+    <style>
+        .monTableau {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .monTableau td, .monTableau th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .monTableau tr:nth-child(even){background-color: #f2f2f2;}
+        .monTableau th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .achat {
+        background-color: green;
+        color: white;
+        }
+
+        .vente {
+        background-color: red;
+        color: white;
+        }
+    </style>
+    <table border="1" class="dataframe monTableau" id="monTableauId">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Nom</th>
+      <th>Prix actuel</th>
+      <th>Prix moyen du mois</th>
+      <th>+ bas du mois</th>
+      <th>Tendance</th>
+      <th>Actions possédées</th>
+      <th>Tendance d'achat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>TotalEnergies SE</td>
+      <td>51.230</td>
+      <td>51.580002</td>
+      <td>0.079998</td>
+      <td>baissière</td>
+      <td>1</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Sanofi</td>
+      <td>94.310</td>
+      <td>93.790001</td>
+      <td>0.880000</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Orange S.A.</td>
+      <td>10.376</td>
+      <td>10.348000</td>
+      <td>0.060000</td>
+      <td>haussière</td>
+      <td>2</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Engie SA</td>
+      <td>14.900</td>
+      <td>14.944000</td>
+      <td>-0.040000</td>
+      <td>baissière</td>
+      <td>1</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Veolia Environnement SA</td>
+      <td>28.540</td>
+      <td>28.530001</td>
+      <td>0.030000</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Vinci SA</td>
+      <td>102.760</td>
+      <td>102.620003</td>
+      <td>0.160002</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>L'Oréal S.A.</td>
+      <td>405.950</td>
+      <td>409.850006</td>
+      <td>-1.300000</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>L'Air Liquide S.A.</td>
+      <td>155.940</td>
+      <td>156.160004</td>
+      <td>0.100004</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Danone S.A.</td>
+      <td>55.080</td>
+      <td>54.970001</td>
+      <td>0.499998</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bouygues SA</td>
+      <td>29.260</td>
+      <td>29.309999</td>
+      <td>-0.020001</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EssilorLuxottica Société anonyme</td>
+      <td>171.000</td>
+      <td>171.100006</td>
+      <td>0.119995</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Sodexo S.A.</td>
+      <td>96.100</td>
+      <td>95.980003</td>
+      <td>0.180002</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Société Générale Société anonyme</td>
+      <td>23.245</td>
+      <td>23.254999</td>
+      <td>0.065000</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>AXA SA</td>
+      <td>25.430</td>
+      <td>25.655001</td>
+      <td>-0.010001</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>BNP Paribas SA</td>
+      <td>55.350</td>
+      <td>55.430000</td>
+      <td>0.080000</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Vivendi SE</td>
+      <td>8.392</td>
+      <td>8.364000</td>
+      <td>0.036000</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Crédit Agricole S.A.</td>
+      <td>10.602</td>
+      <td>10.532000</td>
+      <td>0.096000</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Schneider Electric S.E.</td>
+      <td>158.180</td>
+      <td>159.380005</td>
+      <td>-1.079995</td>
+      <td>baissière</td>
+      <td>0</td>
+      <td>achat</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Renault SA</td>
+      <td>37.815</td>
+      <td>37.639999</td>
+      <td>0.469999</td>
+      <td>haussière</td>
+      <td>0</td>
+      <td>vente</td>
+    </tr>
+  </tbody>
+</table>
+    <script>
+    $(document).ready(function() {
+        $("td:contains('achat')").addClass("achat");
+        $("td:contains('vente')").addClass("vente");
+    });
+    </script>
+    
