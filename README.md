@@ -10,6 +10,6 @@ If any question feel free to reach me.
 
 **Copy the actions.py in the same folder as actions.html**
 
-Compile actions.py this way : python actions.py (or python3 actions.py if you are using python3)
+Compile actions.py this way : "python actions.py" (or python3 actions.py if you are using python3)
 
 Once compiled, the python script will write actions.html and open it on your default web browser
