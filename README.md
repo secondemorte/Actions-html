@@ -1,4 +1,4 @@
 - 👋 Hi, I’m @secondemorte
 - 👀 I’m interested in watchmaking, design and machining, softwares and music
 - 🌱 I’m currently learning python/JS/CSS/ThreeJS
-- 📫 How to reach me : mobsecondemorte@gmail.com // twitter.com/secondemorte
+- 📫 How to reach me : mobsecondemorte@gmail.com // http://www.twitter.com/secondemorte
