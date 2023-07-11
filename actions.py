@@ -91,5 +91,5 @@ def print_stock_prices():
 print_stock_prices()
   #ouverture de actions.html sur page web
 import webbrowser
-webbrowser.open('file:///users/gouj/Desktop/Dev%20IA/actions.html')
-#remplacer gouj par nom d'utilisateur, même chose pour le chemin de fichier
+webbrowser.open('file:///users/mob/Desktop/Dev%20IA/actions.html')
+#remplacer mob par nom d'utilisateur, même chose pour le chemin de fichier
